@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MySql.Data" Version="8.0.17" />
+    <PackageReference Include="MySql.Data.Entity" Version="7.0.7-m61" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Travisca.TMS.Contracts\Tavisca.TMS.Contracts.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="NewFolder\" />
+  </ItemGroup>
+
+</Project>
