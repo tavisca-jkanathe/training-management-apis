@@ -4,19 +4,18 @@ using System.Collections.Generic;
 using System.Text;
 using Tavisca.TMS.Contracts.Interfaces;
 using Tavisca.TMS.Contracts.Models.EmployeeModels;
-using Tavisca.TMS.Persistence.Mapper;
+using Tavisca.TMS.Persistence.Entities.EmployeeDtos;
 using Tavisca.TMS.Persistence.Translator.Employees;
 
-namespace Tavisca.TMS.Persistence.EmployeeRepositories
+namespace Tavisca.TMS.Persistence.Repositories
 {
     public class EmployeeRepository : IRepository<Employee>
     {
-        MySqlConnection _conn = null;
-        EmployeeMapper _employeeMapper = new EmployeeMapper();
         EmployeeTranslator _translator = new EmployeeTranslator();
-        public EmployeeRepository(MySqlConnection conn)
+        IBaseDal<EmployeeDto> _dal = null;
+        public EmployeeRepository(IBaseDal<EmployeeDto> dal)
         {
-            _conn = conn;
+            _dal = dal;
         }
 
 
@@ -27,13 +26,8 @@ namespace Tavisca.TMS.Persistence.EmployeeRepositories
 
         public List<Employee> GetAll()
         {
-            _conn.Open();
-            var query = "select * from employee left join team on employee.TeamId = team.Id";
-            var cmd = new MySqlCommand(query, _conn);
-            var reader = cmd.ExecuteReader();
-            //_conn.Close();
-            var employees =  _employeeMapper.GetAll(reader);
-            return _translator.Translate(employees);
+            var emp = _dal.Fetch();
+            return _translator.Translate(emp);
         }
 
         public Employee GetById(string Id)

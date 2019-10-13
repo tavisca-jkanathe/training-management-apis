@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Tavisca.TMS.Persistence.Dto
+namespace Tavisca.TMS.Persistence.Entities
 {
     public class BaseDto
     {

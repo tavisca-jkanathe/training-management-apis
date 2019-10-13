@@ -4,9 +4,9 @@ using System.Text;
 using Tavisca.TMS.Contracts.Interfaces;
 using Tavisca.TMS.Contracts.Models.EmployeeModels;
 
-namespace Tavisca.TMS.Web.Service.EmployeeServices
+namespace Tavisca.TMS.Core.Service
 {
-    class EmployeeService : IService<Employee>
+    public class EmployeeService : IService<Employee>
     {
         IRepository<Employee> repository;
 

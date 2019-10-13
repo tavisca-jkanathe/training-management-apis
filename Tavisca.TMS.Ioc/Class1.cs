@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Tavisca.TMS.Persistence
+namespace Tavisca.TMS.Ioc
 {
     public class Class1
     {

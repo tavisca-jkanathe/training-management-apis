@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="StructureMap.Microsoft.DependencyInjection" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\src\Tavisca.TMS.Core\Tavisca.TMS.Core.csproj" />
+    <ProjectReference Include="..\src\Tavisca.TMS.Plugins\Tavisca.TMS.Persistence.csproj" />
+    <ProjectReference Include="..\src\Travisca.TMS.Contracts\Tavisca.TMS.Contracts.csproj" />
+  </ItemGroup>
+
+</Project>

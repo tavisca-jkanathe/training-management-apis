@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Tavisca.TMS.Persistence.Dto.Team
+namespace Tavisca.TMS.Persistence.Entities.TeamDtos
 {
     public class TeamDto : BaseDto
     {

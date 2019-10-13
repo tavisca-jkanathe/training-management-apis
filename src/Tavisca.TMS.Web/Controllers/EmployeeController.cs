@@ -12,18 +12,18 @@ namespace Tavisca.TMS.Web.Controllers
     [ApiController]
     public class EmployeeController : ControllerBase
     {
-        IService<Employee> _repo;
+        IService<Employee> _service;
 
-        public EmployeeController(IService<Employee> repo)
+        public EmployeeController(IService<Employee> service)
         {
-            _repo = repo;
+            _service = service;
         }
 
         // GET api/values
         [HttpGet]
         public ActionResult<IEnumerable<Employee>> Get()
         {
-            return _repo.GetAll();
+            return _service.GetAll();
         }
 
         // GET api/values/5

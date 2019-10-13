@@ -13,8 +13,4 @@
     <ProjectReference Include="..\Travisca.TMS.Contracts\Tavisca.TMS.Contracts.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="NewFolder\" />
-  </ItemGroup>
-
 </Project>

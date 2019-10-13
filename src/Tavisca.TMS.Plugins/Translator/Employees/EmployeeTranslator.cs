@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using Tavisca.TMS.Contracts.Models.EmployeeModels;
-using Tavisca.TMS.Persistence.Dto.Employee;
+using Tavisca.TMS.Persistence.Entities.EmployeeDtos;
 using System.Linq;
 namespace Tavisca.TMS.Persistence.Translator.Employees
 {
@@ -18,11 +18,6 @@ namespace Tavisca.TMS.Persistence.Translator.Employees
                 Role = employeeDto.Role,
                 Source = employeeDto.Source,
                 Type = employeeDto.Type,
-                Team = new Contracts.Models.TeamModels.Team
-                {
-                    Id = employeeDto.Team.Id,
-                    Name = employeeDto.Team.Id
-                }
             };
         }
         

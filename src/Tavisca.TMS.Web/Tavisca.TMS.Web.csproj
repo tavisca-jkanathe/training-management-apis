@@ -8,15 +8,13 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
-    <PackageReference Include="MySql.Data" Version="8.0.17" />
-    <PackageReference Include="MySql.Data.EntityFrameworkCore" Version="8.0.17" />
     <PackageReference Include="StructureMap.AspNetCore" Version="2.0.0" />
     <PackageReference Include="StructureMap.Microsoft.DependencyInjection" Version="2.0.0" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\Tavisca.TMS.Ioc\Tavisca.TMS.Ioc.csproj" />
     <ProjectReference Include="..\Tavisca.TMS.Core\Tavisca.TMS.Core.csproj" />
-    <ProjectReference Include="..\Tavisca.TMS.Plugins\Tavisca.TMS.Persistence.csproj" />
     <ProjectReference Include="..\Travisca.TMS.Contracts\Tavisca.TMS.Contracts.csproj" />
   </ItemGroup>
 
