@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Text;
 
 namespace Tavisca.TMS.Persistence.Entities.EmployeeDtos
 {
     public class EmployeeDto : BaseDto
     {
-
         public string Name { get; set; }
         public string TeamId { get; set; }
         public string Email { get; set; }

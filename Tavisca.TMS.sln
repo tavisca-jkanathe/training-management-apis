@@ -15,7 +15,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tavisca.TMS.Tests", "src\Ta
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tavisca.TMS.ApiTest", "src\Tavisca.TMS.ApiTest\Tavisca.TMS.ApiTest.csproj", "{C87C79A6-4646-4C00-8D60-44BD592BA854}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tavisca.TMS.Ioc", "Tavisca.TMS.Ioc\Tavisca.TMS.Ioc.csproj", "{E3605489-1CDB-447A-90F7-4FB95F9ED4D6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tavisca.TMS.Ioc", "src\Tavisca.TMS.Ioc\Tavisca.TMS.Ioc.csproj", "{E3605489-1CDB-447A-90F7-4FB95F9ED4D6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
