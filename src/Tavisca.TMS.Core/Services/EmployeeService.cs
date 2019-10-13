@@ -4,15 +4,18 @@ using System.Text;
 using Tavisca.TMS.Contracts.Interfaces;
 using Tavisca.TMS.Contracts.Models.EmployeeModels;
 
-namespace Tavisca.TMS.Core.Service
+namespace Tavisca.TMS.Core.services
 {
     public class EmployeeService : IService<Employee>
     {
-        IRepository<Employee> repository;
+        private IRepository<Employee> _repository;
+        private IIdentityService<Employee> _identityService;
 
-        public EmployeeService(IRepository<Employee> repository)
+        public EmployeeService(IRepository<Employee> repository, IIdentityService<Employee> identityServie)
         {
-            this.repository = repository;
+            _repository = repository;
+            _identityService = identityServie; // this class will be used in future for creating employee identity
+
         }
 
         public Employee Create(Employee entity)
@@ -27,7 +30,7 @@ namespace Tavisca.TMS.Core.Service
 
         public List<Employee> GetAll()
         {
-            return repository.GetAll();
+            return _repository.GetAll();
         }
 
         public Employee GetById(string id)

@@ -11,7 +11,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using StructureMap;
-
+using AutoMapper;
 using Tavisca.TMS.Ioc.StructureMapRegistries;
 
 namespace Tavisca.TMS.Web
@@ -30,7 +30,7 @@ namespace Tavisca.TMS.Web
         // This method gets called by the runtime. Use this method to add services to the container.
         public IServiceProvider ConfigureServices(IServiceCollection services)
         {
-
+            services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
             var container = new Container();
             container.Configure(config => {

@@ -9,9 +9,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\src\Tavisca.TMS.Core\Tavisca.TMS.Core.csproj" />
-    <ProjectReference Include="..\src\Tavisca.TMS.Plugins\Tavisca.TMS.Persistence.csproj" />
-    <ProjectReference Include="..\src\Travisca.TMS.Contracts\Tavisca.TMS.Contracts.csproj" />
+    <ProjectReference Include="..\Tavisca.TMS.Core\Tavisca.TMS.Core.csproj" />
+    <ProjectReference Include="..\Tavisca.TMS.Persistence\Tavisca.TMS.Persistence.csproj" />
+    <ProjectReference Include="..\Travisca.TMS.Contracts\Tavisca.TMS.Contracts.csproj" />
   </ItemGroup>
 
 </Project>

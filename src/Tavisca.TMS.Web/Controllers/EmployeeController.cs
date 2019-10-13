@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using Tavisca.TMS.Contracts.Interfaces;
+using Tavisca.TMS.Contracts.Messages.EmployeeMessages;
 using Tavisca.TMS.Contracts.Models.EmployeeModels;
 
 namespace Tavisca.TMS.Web.Controllers
@@ -13,17 +15,18 @@ namespace Tavisca.TMS.Web.Controllers
     public class EmployeeController : ControllerBase
     {
         IService<Employee> _service;
-
-        public EmployeeController(IService<Employee> service)
+        IMapper _mapper;
+        public EmployeeController(IService<Employee> service, IMapper mapper)
         {
             _service = service;
+            _mapper = mapper;
         }
 
         // GET api/values
         [HttpGet]
-        public ActionResult<IEnumerable<Employee>> Get()
+        public ActionResult<IEnumerable<EmployeeResponse>> Get()
         {
-            return _service.GetAll();
+            return _service.GetAll().Select(x=>_mapper.Map<EmployeeResponse>(x)).ToList();
         }
 
         // GET api/values/5

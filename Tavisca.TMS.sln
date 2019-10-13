@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tavisca.TMS.Contracts", "sr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tavisca.TMS.Core", "src\Tavisca.TMS.Core\Tavisca.TMS.Core.csproj", "{0093DB02-F403-40EE-B402-92A1F11268F2}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tavisca.TMS.Persistence", "src\Tavisca.TMS.Plugins\Tavisca.TMS.Persistence.csproj", "{DABA46CE-8A13-496B-B024-9D4060CA04CE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tavisca.TMS.Persistence", "src\Tavisca.TMS.Persistence\Tavisca.TMS.Persistence.csproj", "{DABA46CE-8A13-496B-B024-9D4060CA04CE}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tavisca.TMS.Web", "src\Tavisca.TMS.Web\Tavisca.TMS.Web.csproj", "{70DA9378-2F50-498F-8D13-7BD27B4FA1BE}"
 EndProject
@@ -15,7 +15,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tavisca.TMS.Tests", "src\Ta
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tavisca.TMS.ApiTest", "src\Tavisca.TMS.ApiTest\Tavisca.TMS.ApiTest.csproj", "{C87C79A6-4646-4C00-8D60-44BD592BA854}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tavisca.TMS.Ioc", "src\Tavisca.TMS.Ioc\Tavisca.TMS.Ioc.csproj", "{E3605489-1CDB-447A-90F7-4FB95F9ED4D6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tavisca.TMS.Ioc", "src\Tavisca.TMS.Ioc\Tavisca.TMS.Ioc.csproj", "{E3605489-1CDB-447A-90F7-4FB95F9ED4D6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +51,10 @@ Global
 		{E3605489-1CDB-447A-90F7-4FB95F9ED4D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E3605489-1CDB-447A-90F7-4FB95F9ED4D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E3605489-1CDB-447A-90F7-4FB95F9ED4D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C80C82DE-7CCD-4302-A37B-C2BAEF46285D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C80C82DE-7CCD-4302-A37B-C2BAEF46285D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C80C82DE-7CCD-4302-A37B-C2BAEF46285D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C80C82DE-7CCD-4302-A37B-C2BAEF46285D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
